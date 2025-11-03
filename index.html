@@ -283,7 +283,7 @@
         <div class="lg:col-start-1 lg:col-end-3">
             <div class="mb-4 flex flex-col items-center justify-center">
                 <img src="Ecoxpert-logo-certification.jpg" alt="Schneider Electric EcoXpert Logo" class="h-10 w-auto bg-white p-1 rounded">
-                <p class="mt-2 text-sm text-yellow-300 font-semibold">EcoXpert Critical Power MASTER Certified</p>
+                <p class="mt-2 text-sm text-yellow-300 font-semibold">Schneider Electric EcoXpert Critical Power MASTER Certified</p>
             </div>
             <h3 class="text-3xl font-bold mb-3">Certified Expertise You Can Trust</h3>
             <p class="text-slate-200 max-w-2xl mx-auto">MAES is certified as a Critical Power MASTER by Schneider Electric's EcoXpert program. This guarantees that our solutions meet the highest global standards for energy reliability and performance.</p>
@@ -359,14 +359,14 @@
     <div class="max-w-5xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div>
         <h3 class="text-2xl font-bold">Get in touch</h3>
-        <p class="mt-2 text-slate-600">Interested in talking? Send a message and we'll respond within 48 hours.</p>
+        <p class="mt-2 text-slate-600">“Have a question or project in mind? Reach out — our team will get back to you soon.”.</p>
 
         <div class="mt-6 space-y-4">
           <div class="flex items-center gap-3">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M2 12h20" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/></svg>
             <div>
               <div class="text-sm text-slate-700">Email</div>
-              <div class="font-semibold">info@maes.example</div>
+              <div class="font-semibold">mail@maes‐wll.com</div>
             </div>
           </div>
 
@@ -374,7 +374,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v14H3z" stroke="#0f172a" stroke-width="1.5"/></svg>
             <div>
               <div class="text-sm text-slate-700">Phone</div>
-              <div class="font-semibold">+966 5X XXX XXXX</div>
+              <div class="font-semibold">+966 13 817 5786</div>
             </div>
           </div>
         </div>
@@ -415,14 +415,37 @@
     },{threshold:0.15});
     document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
 
-    // mobile menu (basic)
+    // mobile menu (updated: closes on outside click and link click)
     const menuBtn=document.getElementById('menuBtn');
     menuBtn?.addEventListener('click',()=>{
       const nav=document.createElement('div');
       nav.className='fixed inset-0 bg-black/60 z-50 flex items-start justify-center p-6';
-      nav.innerHTML=`<div class=\"mt-20 w-full max-w-sm bg-white text-slate-900 rounded-lg p-6\"> <button id=\"close\" class=\"mb-4\">Close</button> <nav class=\"flex flex-col gap-3\"> <a href=\"#hero\" class=\"font-semibold\">Home</a> <a href=\"#about\" class=\"font-semibold\">About</a> <a href=\"#services\" class=\"font-semibold\">Services</a> <a href=\"#projects\" class=\"font-semibold\">Projects</a> <a href=\"#partners\" class=\"font-semibold\">Partners</a> <a href=\"#contact\" class=\"font-semibold\">Contact</a> </nav></div>`;
+      nav.innerHTML=`
+        <div class="mt-20 w-full max-w-sm bg-white text-slate-900 rounded-lg p-6 relative">
+          <button id="close" class="absolute top-3 right-3 text-slate-600">✕</button>
+          <nav class="flex flex-col gap-3">
+            <a href="#hero" class="font-semibold">Home</a>
+            <a href="#about" class="font-semibold">About</a>
+            <a href="#services" class="font-semibold">Services</a>
+            <a href="#projects" class="font-semibold">Projects</a>
+            <a href="#partners" class="font-semibold">Partners</a>
+            <a href="#contact" class="font-semibold">Contact</a>
+          </nav>
+        </div>`;
       document.body.appendChild(nav);
-      nav.querySelector('#close').addEventListener('click',()=>nav.remove());
+
+      // close when clicking outside the menu box (only if the overlay itself is clicked)
+      nav.addEventListener('click', (e) => {
+        if (e.target === nav) nav.remove();
+      });
+
+      // close button
+      nav.querySelector('#close').addEventListener('click', ()=>nav.remove());
+
+      // close when any link is clicked
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => nav.remove());
+      });
     });
 
     // Formspree AJAX Submission to prevent redirect and display status
