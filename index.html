@@ -122,21 +122,24 @@
             </div>
         </a>
 
-        <nav class="hidden md:flex items-center gap-2 text-white">
-            <a href="#hero" class="glass text-white/90 hover:text-white">Home</a>
-            <a href="#about" class="glass text-white/90 hover:text-white">About</a>
-            <a href="#services" class="glass text-white/90 hover:text-white">Services</a>
-            <a href="#projects" class="glass text-white/90 hover:text-white">Projects</a>
-            <a href="#partners" class="glass text-white/90 hover:text-white">Partners</a>
-            <a href="#contact" class="glass text-white/90 hover:text-white">Contact</a>
-        </nav>
+        <div class="flex items-center gap-4">
+            
+            <nav class="hidden md:flex items-center gap-2 text-white">
+                <a href="#hero" class="glass text-white/90 hover:text-white">Home</a>
+                <a href="#about" class="glass text-white/90 hover:text-white">About</a>
+                <a href="#services" class="glass text-white/90 hover:text-white">Services</a>
+                <a href="#projects" class="glass text-white/90 hover:text-white">Projects</a>
+                <a href="#partners" class="glass text-white/90 hover:text-white">Partners</a>
+                <a href="#contact" class="glass text-white/90 hover:text-white">Contact</a>
+            </nav>
 
-        <div class="md:hidden">
-            <button id="menuBtn" aria-label="Open menu" class="p-2 rounded-md glass">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
+            <div class="md:hidden">
+                <button id="menuBtn" aria-label="Open menu" class="p-2 rounded-md glass">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
         </div>
-    </div>
+        </div>
   </div>
   <section id="hero" class="bg-hero min-h-[70vh] pt-16 pb-20 flex items-center">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -298,7 +301,7 @@
 
       <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article class="rounded-lg overflow-hidden shadow-lg border border-slate-100 hover:shadow-xl transition duration-300">
-          <img src="/aramco.jpg" alt="Project preview">
+          <img class="project-img w-full" src="/aramco.jpg" alt="Project preview">
           <div class="p-4">
             <h4 class="font-semibold">Electrical Power Monitoring System</h4>
             <p class="mt-2 text-sm text-slate-600">“Implemented a comprehensive Electrical Power Monitoring System (EPMS) across Aramco facilities to monitor, analyze, and optimize power distribution. Integrated real-time SCADA data from substations and critical equipment for improved reliability and uptime. Enabled predictive maintenance, energy efficiency, and detailed reporting for operational decision-making.”</p>
@@ -306,7 +309,7 @@
         </article>
 
         <article class="rounded-lg overflow-hidden shadow-lg border border-slate-100 hover:shadow-xl transition duration-300">
-          <img src="/web.jpg" alt="Project preview">
+          <img class="project-img w-full" src="/web.jpg" alt="Project preview">
           <div class="p-4">
             <h4 class="font-semibold">Substation Protection Upgrade</h4>
             <p class="mt-2 text-sm text-slate-600">“Implemented a transformer monitoring system for transformers at Clarios | Mebco, using 3 sensors per transformer to track . The system provides real-time alerts, identifying exactly which transformer trips, enabling rapid response and minimizing downtime.”</p>
@@ -314,7 +317,7 @@
         </article>
 
         <article class="rounded-lg overflow-hidden shadow-lg border border-slate-100 hover:shadow-xl transition duration-300">
-          <img src="/2.jpg" alt="Project preview">
+          <img class="project-img w-full" src="/2.jpg" alt="Project preview">
           <div class="p-4">
             <h4 class="font-semibold">Energy Audit & Optimization</h4>
             <p class="mt-2 text-sm text-slate-600">“As part of our electrical upgrade at Gulf Pack, a new advanced power meter has been installed on the control panel. It accurately monitors voltage, current, and energy consumption in real time. This enables precise tracking, improves operational efficiency, and ensures reliable power management for the facility.”.</p>
@@ -447,7 +450,6 @@
                     });
 
                     if (response.ok) {
-                        // UPDATED SUCCESS MESSAGE
                         formStatus.textContent = 'Message sent successfully.'; 
                         formStatus.classList.remove('text-red-600', 'text-slate-600');
                         formStatus.classList.add('text-green-600');
