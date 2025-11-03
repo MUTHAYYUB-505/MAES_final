@@ -7,7 +7,7 @@
   <meta name="description" content="MAES — power & energy solutions. Modern, responsive corporate website designed by Muthayyub Mohd." />
   <meta name="google-site-verification" content="JX0z_dbTEYiWUO4HueSa1tXcMYhlJR93z_3xcA61te4" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="fff.png" />
+  <link rel="icon" type="image/png" href="fff.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{
@@ -177,7 +177,7 @@
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </div>
   </section>
 
@@ -200,7 +200,7 @@
 
         <div class="mt-6">
           <a href="#services" class="px-4 py-2 rounded btn-gold">See services</a>
-          </div>
+        </div>
       </div>
 
       <div class="lg:col-span-6">
@@ -415,55 +415,15 @@
     },{threshold:0.15});
     document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
 
-    // --- UPDATED MOBILE MENU LOGIC ---
-    const menuBtn = document.getElementById('menuBtn');
-
-    menuBtn?.addEventListener('click', () => {
-        // Create the full-screen overlay (the backdrop)
-        const navOverlay = document.createElement('div');
-        navOverlay.id = 'mobile-menu-overlay';
-        navOverlay.className = 'fixed inset-0 bg-black/60 z-50 flex items-start justify-center p-6 transition-opacity duration-300';
-        
-        // The inner white menu panel HTML
-        navOverlay.innerHTML = `<div id="mobile-menu-panel" class="mt-20 w-full max-w-sm bg-white text-slate-900 rounded-lg p-6"> 
-            <button id="close" aria-label="Close menu" class="mb-4 text-sm font-bold text-slate-600 hover:text-slate-900">Close</button> 
-            <nav class="flex flex-col gap-3" id="mobile-nav-links"> 
-                <a href="#hero" class="font-semibold py-1 block">Home</a> 
-                <a href="#about" class="font-semibold py-1 block">About</a> 
-                <a href="#services" class="font-semibold py-1 block">Services</a> 
-                <a href="#projects" class="font-semibold py-1 block">Projects</a> 
-                <a href="#partners" class="font-semibold py-1 block">Partners</a> 
-                <a href="#contact" class="font-semibold py-1 block">Contact</a> 
-            </nav>
-        </div>`;
-
-        document.body.appendChild(navOverlay);
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
-
-        const closeMenu = () => {
-            navOverlay.remove();
-            document.body.style.overflow = ''; // Restore background scrolling
-        };
-
-        // 1. Close button functionality
-        navOverlay.querySelector('#close').addEventListener('click', closeMenu);
-
-        // 2. Close when a navigation link is clicked (crucial fix for your issue)
-        const links = navOverlay.querySelectorAll('#mobile-nav-links a');
-        links.forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
-
-        // 3. Close when the backdrop is clicked (crucial fix for your issue)
-        navOverlay.addEventListener('click', (event) => {
-            // Only close if the click target is the overlay itself (id="mobile-menu-overlay"), not the content inside (id="mobile-menu-panel")
-            if (event.target.id === 'mobile-menu-overlay') {
-                closeMenu();
-            }
-        });
+    // mobile menu (basic)
+    const menuBtn=document.getElementById('menuBtn');
+    menuBtn?.addEventListener('click',()=>{
+      const nav=document.createElement('div');
+      nav.className='fixed inset-0 bg-black/60 z-50 flex items-start justify-center p-6';
+      nav.innerHTML=`<div class=\"mt-20 w-full max-w-sm bg-white text-slate-900 rounded-lg p-6\"> <button id=\"close\" class=\"mb-4\">Close</button> <nav class=\"flex flex-col gap-3\"> <a href=\"#hero\" class=\"font-semibold\">Home</a> <a href=\"#about\" class=\"font-semibold\">About</a> <a href=\"#services\" class=\"font-semibold\">Services</a> <a href=\"#projects\" class=\"font-semibold\">Projects</a> <a href=\"#partners\" class=\"font-semibold\">Partners</a> <a href=\"#contact\" class=\"font-semibold\">Contact</a> </nav></div>`;
+      document.body.appendChild(nav);
+      nav.querySelector('#close').addEventListener('click',()=>nav.remove());
     });
-    // --- END OF UPDATED MOBILE MENU LOGIC ---
-
 
     // Formspree AJAX Submission to prevent redirect and display status
     document.addEventListener('DOMContentLoaded', () => {
@@ -517,4 +477,4 @@
     });
   </script>
 </body>
-</html>
+</html> 
