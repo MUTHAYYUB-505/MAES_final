@@ -81,13 +81,13 @@
       </a>
       <div class="flex items-center gap-4">
           <nav class="hidden md:flex items-center gap-2 text-white">
-              <a href="#hero" class="glass text-white/90 hover:text-white">Home</a>
-                <a href="#about" class="glass text-white/90 hover:text-white">About</a>
-                <a href="#services" class="glass text-white/90 hover:text-white">Services</a>
-                <a href="#projects" class="glass text-white/90 hover:text-white">Projects</a>
-                <a href="#partners" class="glass text-white/90 hover:text-white">Partners</a>
-                <a href="#contact" class="glass text-white/90 hover:text-white">Contact</a>
-              <a href="#careers" class="glass text-white/90 hover:text-white">Careers</a>
+              <a href="index.html#hero" class="glass text-white/90 hover:text-white">Home</a>
+              <a href="index.html#about" class="glass text-white/90 hover:text-white">About</a>
+              <a href="index.html#services" class="glass text-white/90 hover:text-white">Services</a>
+              <a href="index.html#projects" class="glass text-white/90 hover:text-white">Projects</a>
+              <a href="index.html#partners" class="glass text-white/90 hover:text-white">Partners</a>
+              <a href="index.html#contact" class="glass text-white/90 hover:text-white">Contact</a>
+              <a href="careers.html" class="glass text-white/90 hover:text-white">Careers</a>
           </nav>
           <div class="md:hidden">
               <button id="menuBtn" aria-label="Open menu" class="p-2 rounded-md glass">
@@ -196,14 +196,15 @@ menuBtn?.addEventListener('click',()=>{
     <div class="mt-20 w-full max-w-sm bg-white text-slate-900 rounded-lg p-6 relative">
       <button id="close" class="absolute top-3 right-3 text-slate-600">✕</button>
       <nav class="flex flex-col gap-3">
-         <a href="#hero" class="font-semibold">Home</a>
-            <a href="#about" class="font-semibold">About</a>
-            <a href="#services" class="font-semibold">Services</a>
-            <a href="#projects" class="font-semibold">Projects</a>
-            <a href="#partners" class="font-semibold">Partners</a>
-            <a href="#contact" class="font-semibold">Contact</a>
-        <a href="#careers" class="font-semibold">Careers</a>
-      </nav>
+  <a href="index.html#hero" class="font-semibold">Home</a>
+  <a href="index.html#about" class="font-semibold">About</a>
+  <a href="index.html#services" class="font-semibold">Services</a>
+  <a href="index.html#projects" class="font-semibold">Projects</a>
+  <a href="index.html#partners" class="font-semibold">Partners</a>
+  <a href="index.html#contact" class="font-semibold">Contact</a>
+  <a href="careers.html" class="font-semibold">Careers</a>
+</nav>
+
     </div>`;
   document.body.appendChild(nav);
   nav.addEventListener('click', (e) => { if (e.target === nav) nav.remove(); });
