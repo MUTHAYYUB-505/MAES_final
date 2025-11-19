@@ -21,17 +21,15 @@
 <meta name="twitter:title" content="MAES — M. Advanced Energy Systems" />
 <meta name="twitter:description" content="Power, Automation, and Energy Solutions by MAES." />
 <meta name="twitter:image" content="https://muthayyub-505.github.io/MAES_final/fff.png" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   
   <meta name="google-site-verification" content="JX0z_dbTEYiWUO4HueSa1tXcMYhlJR93z_3xcA61te4" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="fff.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/48.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/192.png">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
+  <link rel="icon" type="image/png" href="fff.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{
@@ -41,6 +39,18 @@
       --maes-light-green:#1a6f62; /* Lighter shade for the mockup box */
     }
     html,body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}    
+
+   /* CSS for image hover effect (Scale and Brightness) */
+   .premium-card .swiper-slide img {
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for effect */
+        filter: brightness(100%); /* Default brightness */
+    }
+
+    .premium-card .swiper-slide img:hover {
+        transform: scale(1.05); /* Slightly enlarge the image */
+        filter: brightness(115%); /* Make it a bit brighter */
+        cursor: pointer; /* Indicate it's interactive */
+    }
     
     /* MODIFIED: Lightened Header Background */
     .bg-header-dynamic{
@@ -212,6 +222,235 @@
       </div>
     </div>
   </section>
+  
+  
+  
+  <section id="technical-scope" class="py-16 lg:py-24 bg-slate-800 text-slate-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <div class="lg:col-span-12">
+            <h3 class="text-3xl font-bold mb-6 text-white">Detailed Technical Scope of Work</h3>
+
+            <p class="mb-8 text-slate-300">
+                MAES provides comprehensive and fully engineered solutions for industrial automation,
+                power monitoring, electrical protection, and advanced communication systems.
+                Our scopes include system design, interface engineering, supply, FAT/SAT execution,
+                programming, PLC/SCADA configuration, testing, commissioning, and long-term O&M support.
+                All solutions comply with IEC, IEEE, NEC, UL, and local utility standards.
+            </p>
+
+            <h4 class="text-xl font-semibold mb-4 text-[var(--maes-gold)]">
+                Power & Energy Automation Products (A. Trading)
+            </h4>
+
+            <div class="space-y-6">
+
+                <div class="border-l-4 border-[var(--maes-green)] pl-4">
+                    <p class="font-bold text-white text-lg">Power Monitoring Systems (EPMS / SCADA)</p>
+                    <p class="text-sm text-slate-400 mt-2">
+                        High-performance electrical monitoring and automation platforms designed for
+                        industrial, commercial, and utility power networks. Our systems enable real-time
+                        operational visibility, automatic data acquisition, electrical event reconstruction,
+                        and intelligent fault analysis.
+                    </p>
+
+                    <ul class="list-disc ml-6 mt-2 text-slate-300 text-sm space-y-1">
+                        <li>Real-time monitoring of power quality, load distribution, equipment utilization, and energy performance</li>
+                        <li>IEC 61850-based substation automation including GOOSE, MMS, SV, PRP/HSR redundancy</li>
+                        <li>Breaker control logic, SOE, and relay communication integration</li>
+                        <li>Automated data logging, waveform capture, harmonic profiling</li>
+                        <li>Multi-site centralized monitoring via dashboards and historian servers</li>
+                        <li>NERC/ISO compliant alarm management with SMS/email notifications</li>
+                    </ul>
+
+                    <p class="font-semibold text-[var(--maes-gold)] mt-3">Subsystems Included:</p>
+
+                    <ul class="list-disc ml-6 text-sm text-slate-300 space-y-1">
+                        <li><strong>SAS – Substation Automation System:</strong> Integration of relays, IEDs, bay controllers, and SCADA HMIs.</li>
+                        <li><strong>Reduced PSA Architecture:</strong> Digital interlocking, simplified wiring, fast-deployment design.</li>
+                        <li><strong>RSMS – Remote Switching:</strong> IIoT-based remote control & monitoring for feeders and breakers.</li>
+                    </ul>
+
+                    <p class="text-xs italic mt-3 text-slate-500">
+                        Principals: Schneider Electric, Adtek, Elmeasure, COPA-DATA, Surveilant Tech.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-[var(--maes-green)] pl-4">
+                    <p class="font-bold text-white text-lg">Power Quality Correction & Protection</p>
+                    <p class="text-sm text-slate-400 mt-2">
+                        Engineering solutions that enhance network stability, protect equipment, minimize losses,
+                        and ensure compliance with IEEE-519 & IEC-61000 harmonic standards.
+                    </p>
+
+                    <ul class="list-disc ml-6 text-sm text-slate-300 space-y-1 mt-2">
+                        <li>APFC systems with automatic capacitor bank control</li>
+                        <li>Active Harmonic Filters (AHF) for real-time harmonic elimination</li>
+                        <li>Detuned/tuned passive filters for VFD/UPS loads</li>
+                        <li>Static VAR Generators (SVG/SVC) with millisecond response</li>
+                        <li>Industrial UPS (online, modular, double-conversion)</li>
+                        <li>Voltage stabilizers & isolation transformers</li>
+                        <li>Surge & lightning protection (IEC 61643)</li>
+                    </ul>
+
+                    <p class="text-xs italic mt-3 text-slate-500">
+                        Principals: Schneider Electric, MR Germany, Comar, APC, Gutor, Salicru.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-[var(--maes-green)] pl-4">
+                    <p class="font-bold text-white text-lg">Industrial Controls & Communication</p>
+                    <p class="text-sm text-slate-400 mt-2">
+                        Automation systems for manufacturing, utilities, and process industries.
+                    </p>
+
+                    <ul class="list-disc ml-6 text-slate-300 text-sm mt-2 space-y-1">
+                        <li>PLC systems with redundancy</li>
+                        <li>RTUs for remote automation</li>
+                        <li>Managed Ethernet/Fiber switches</li>
+                        <li>Industrial routers (GPRS/LTE/5G)</li>
+                        <li>Protocol converters (Modbus, Profinet, IEC 61850)</li>
+                        <li>IIoT gateways and cloud integration</li>
+                        <li>Wireless mesh systems (LoRaWAN / 2.4G / 5GHz)</li>
+                    </ul>
+
+                    <p class="text-xs italic mt-3 text-slate-500">
+                        Principals: Brodersen, Moxa, Advantech, Beckhoff.
+                    </p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-semibold mt-10 mb-3 text-[var(--maes-gold)]">
+                Specialized Panel & Material Supply
+            </h4>
+
+            <ul class="list-disc ml-6 space-y-2 text-slate-300 text-sm">
+                <li><strong>Customized Panels:</strong> MCC/PCC, Synchronizing, AMF/ATS, Marshalling, Relay Panels, SCADA Consoles.</li>
+                <li><strong>Transformers & Electromechanical:</strong> Dry/oil transformers, motors, switchgear, CTs/PTs.</li>
+                <li><strong>Industrial Materials:</strong> Coatings, EPDM sheets, PVC insulation, cable glands/trays, earthing materials.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 mt-20">
+        <h2 class="text-center text-[var(--maes-gold)] font-extrabold text-4xl tracking-wide drop-shadow-lg mb-12">
+            Premium Product Showcase
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div class="premium-card bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-[var(--maes-light-green)] shadow-lg hover:shadow-2xl transition-all duration-500 p-4">
+                <div class="swiper swiper-one rounded-xl overflow-hidden border-2 border-[var(--maes-gold)] shadow-md">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="20.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="21.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="25.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="26.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="27.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="28.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="29.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="30.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="32.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="33.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="34.jpg" class="w-full h-60 object-contain"></div>
+                      
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-one"></div>
+                </div>
+                <h4 class="text-center text-[var(--maes-gold)] mt-4 text-lg font-semibold tracking-wide">
+                    Power & Automation Gallery
+                </h4>
+            </div>
+
+            <div class="premium-card bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-[var(--maes-light-green)] shadow-lg hover:shadow-2xl transition-all duration-500 p-4">
+                <div class="swiper swiper-two rounded-xl overflow-hidden border-2 border-[var(--maes-gold)] shadow-md">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="c.webp" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="b.webp" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="a.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="d.jpeg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="e.jpg" class="w-full h-60 object-contain"></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-two"></div>
+                </div>
+                <h4 class="text-center text-[var(--maes-gold)] mt-4 text-lg font-semibold tracking-wide">
+                    Industrial Material Showcase
+                </h4>
+            </div>
+
+            <div class="premium-card bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-[var(--maes-light-green)] shadow-lg hover:shadow-2xl transition-all duration-500 p-4">
+                <div class="swiper swiper-three rounded-xl overflow-hidden border-2 border-[var(--maes-gold)] shadow-md">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="banniere_6103.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="Brodersen-Logo-Embedded-768x389.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="images (1).png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="images (2).png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="images (3).png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="images.png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="moxa-logo-open-graph.png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="logo.png" class="w-full h-60 object-contain"></div>
+                        
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-three"></div>
+                </div>
+                <h4 class="text-center text-[var(--maes-gold)] mt-4 text-lg font-semibold tracking-wide">
+                  Principals & Products
+                </h4>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiperOne = new Swiper(".swiper-one", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true // Enables pause on hover
+            },
+            pagination: {
+                el: ".swiper-pagination-one",
+                clickable: true
+            }
+        });
+
+        const swiperTwo = new Swiper(".swiper-two", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true // Enables pause on hover
+            },
+            pagination: {
+                el: ".swiper-pagination-two",
+                clickable: true
+            }
+        });
+
+        const swiperThree = new Swiper(".swiper-three", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true // Enables pause on hover
+            },
+            pagination: {
+                el: ".swiper-pagination-three",
+                clickable: true
+            }
+        });
+    </script>
+</section>
 
   <section id="services" class="py-16 lg:py-20 bg-slate-900 text-slate-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
@@ -342,30 +581,26 @@
           <img src="IMG_6330.JPG" alt="client" class="h-32 w-auto object-contain" />
         </div>
 
-         <div class="flex items-center justify-center">
-          <img src="kfupm.png" alt="client" class="h-32 w-auto object-contain" />
-        </div>
-
         <div class="flex items-center justify-center">
-          <img src="maden.png" alt="client" class="h-32 w-auto object-contain" />
+          <img src="sec.jpg" alt="client" class="h-32 w-auto object-contain" />
         </div>
-
         <div class="flex items-center justify-center">
           <img src="petro.png" alt="client" class="h-32 w-auto object-contain" />
         </div>
-
         <div class="flex items-center justify-center">
           <img src="royal.png" alt="client" class="h-32 w-auto object-contain" />
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="maden.png" alt="client" class="h-32 w-auto object-contain" />
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="kfupm.png" alt="client" class="h-32 w-auto object-contain" />
         </div>
 
         <div class="flex items-center justify-center">
           <img src="sac.jpg" alt="client" class="h-32 w-auto object-contain" />
         </div>
 
-        <div class="flex items-center justify-center">
-          <img src="sec.jpg" alt="client" class="h-32 w-auto object-contain" />
-        </div>
-        
       </div>
     </div>
   </section>
@@ -466,8 +701,10 @@
       </div>
     </div>
   </section>
-
+  
   <script>
+ 
+
     const obs = new IntersectionObserver((entries)=>{
       entries.forEach(e=>{
         if(e.isIntersecting){e.target.classList.add('visible')}
@@ -537,5 +774,8 @@
         }
     });
   </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 </html>
