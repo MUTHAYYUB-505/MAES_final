@@ -51,6 +51,13 @@
         filter: brightness(115%); /* Make it a bit brighter */
         cursor: pointer; /* Indicate it's interactive */
     }
+
+ .swiper-slide {
+        transition: opacity 0.8s ease-in-out !important;
+    }
+    .swiper-wrapper {
+        transition-timing-function: ease-in-out !important;
+    }
     
     /* MODIFIED: Lightened Header Background */
     .bg-header-dynamic{
@@ -409,6 +416,7 @@
             loop: true,
             slidesPerView: 1,
             spaceBetween: 10,
+          speed: 400,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -424,6 +432,7 @@
             loop: true,
             slidesPerView: 1,
             spaceBetween: 10,
+          speed: 400,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -439,6 +448,7 @@
             loop: true,
             slidesPerView: 1,
             spaceBetween: 10,
+          speed: 400,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
