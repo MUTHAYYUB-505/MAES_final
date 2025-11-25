@@ -232,113 +232,149 @@
   
   
   
-  <section id="technical-scope" class="py-16 lg:py-24 bg-slate-800 text-slate-100">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-        
-        <div class="lg:col-span-12">
-            <h3 class="text-3xl font-bold mb-6 text-white">Detailed Technical Scope of Work</h3>
+ <section id="technical-scope" class="py-24 relative overflow-hidden bg-gradient-to-br from-slate-800 via-slate-900 to-slate-700 text-slate-100">
 
-            <p class="mb-8 text-slate-300">
-                MAES provides comprehensive and fully engineered solutions for industrial automation,
-                power monitoring, electrical protection, and advanced communication systems.
-                Our scopes include system design, interface engineering, supply, FAT/SAT execution,
-                programming, PLC/SCADA configuration, testing, commissioning, and long-term O&M support.
-                All solutions comply with IEC, IEEE, NEC, UL, and local utility standards.
-            </p>
-
-            <h4 class="text-xl font-semibold mb-4 text-[var(--maes-gold)]">
-                Power & Energy Automation Products (A. Trading)
-            </h4>
-
-            <div class="space-y-6">
-
-                <div class="border-l-4 border-[var(--maes-green)] pl-4">
-                    <p class="font-bold text-white text-lg">Power Monitoring Systems (EPMS / SCADA)</p>
-                    <p class="text-sm text-slate-400 mt-2">
-                        High-performance electrical monitoring and automation platforms designed for
-                        industrial, commercial, and utility power networks. Our systems enable real-time
-                        operational visibility, automatic data acquisition, electrical event reconstruction,
-                        and intelligent fault analysis.
-                    </p>
-
-                    <ul class="list-disc ml-6 mt-2 text-slate-300 text-sm space-y-1">
-                        <li>Real-time monitoring of power quality, load distribution, equipment utilization, and energy performance</li>
-                        <li>IEC 61850-based substation automation including GOOSE, MMS, SV, PRP/HSR redundancy</li>
-                        <li>Breaker control logic, SOE, and relay communication integration</li>
-                        <li>Automated data logging, waveform capture, harmonic profiling</li>
-                        <li>Multi-site centralized monitoring via dashboards and historian servers</li>
-                        <li>NERC/ISO compliant alarm management with SMS/email notifications</li>
-                    </ul>
-
-                    <p class="font-semibold text-[var(--maes-gold)] mt-3">Subsystems Included:</p>
-
-                    <ul class="list-disc ml-6 text-sm text-slate-300 space-y-1">
-                        <li><strong>SAS – Substation Automation System:</strong> Integration of relays, IEDs, bay controllers, and SCADA HMIs.</li>
-                        <li><strong>Reduced PSA Architecture:</strong> Digital interlocking, simplified wiring, fast-deployment design.</li>
-                        <li><strong>RSMS – Remote Switching:</strong> IIoT-based remote control & monitoring for feeders and breakers.</li>
-                    </ul>
-
-                    <p class="text-xs italic mt-3 text-slate-500">
-                        Principals: Schneider Electric, Adtek, Elmeasure, COPA-DATA, Surveilant Tech.
-                    </p>
-                </div>
-
-                <div class="border-l-4 border-[var(--maes-green)] pl-4">
-                    <p class="font-bold text-white text-lg">Power Quality Correction & Protection</p>
-                    <p class="text-sm text-slate-400 mt-2">
-                        Engineering solutions that enhance network stability, protect equipment, minimize losses,
-                        and ensure compliance with IEEE-519 & IEC-61000 harmonic standards.
-                    </p>
-
-                    <ul class="list-disc ml-6 text-sm text-slate-300 space-y-1 mt-2">
-                        <li>APFC systems with automatic capacitor bank control</li>
-                        <li>Active Harmonic Filters (AHF) for real-time harmonic elimination</li>
-                        <li>Detuned/tuned passive filters for VFD/UPS loads</li>
-                        <li>Static VAR Generators (SVG/SVC) with millisecond response</li>
-                        <li>Industrial UPS (online, modular, double-conversion)</li>
-                        <li>Voltage stabilizers & isolation transformers</li>
-                        <li>Surge & lightning protection (IEC 61643)</li>
-                    </ul>
-
-                    <p class="text-xs italic mt-3 text-slate-500">
-                        Principals: Schneider Electric, MR Germany, Comar, APC, Gutor, Salicru.
-                    </p>
-                </div>
-
-                <div class="border-l-4 border-[var(--maes-green)] pl-4">
-                    <p class="font-bold text-white text-lg">Industrial Controls & Communication</p>
-                    <p class="text-sm text-slate-400 mt-2">
-                        Automation systems for manufacturing, utilities, and process industries.
-                    </p>
-
-                    <ul class="list-disc ml-6 text-slate-300 text-sm mt-2 space-y-1">
-                        <li>PLC systems with redundancy</li>
-                        <li>RTUs for remote automation</li>
-                        <li>Managed Ethernet/Fiber switches</li>
-                        <li>Industrial routers (GPRS/LTE/5G)</li>
-                        <li>Protocol converters (Modbus, Profinet, IEC 61850)</li>
-                        <li>IIoT gateways and cloud integration</li>
-                        <li>Wireless mesh systems (LoRaWAN / 2.4G / 5GHz)</li>
-                    </ul>
-
-                    <p class="text-xs italic mt-3 text-slate-500">
-                        Principals: Brodersen, Moxa, Advantech, Beckhoff.
-                    </p>
-                </div>
-            </div>
-
-            <h4 class="text-xl font-semibold mt-10 mb-3 text-[var(--maes-gold)]">
-                Specialized Panel & Material Supply
-            </h4>
-
-            <ul class="list-disc ml-6 space-y-2 text-slate-300 text-sm">
-                <li><strong>Customized Panels:</strong> MCC/PCC, Synchronizing, AMF/ATS, Marshalling, Relay Panels, SCADA Consoles.</li>
-                <li><strong>Transformers & Electromechanical:</strong> Dry/oil transformers, motors, switchgear, CTs/PTs.</li>
-                <li><strong>Industrial Materials:</strong> Coatings, EPDM sheets, PVC insulation, cable glands/trays, earthing materials.</li>
-            </ul>
-        </div>
-
+    <!-- Background Neon Grid -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,rgba(255,255,255,0.03)_100%)]"></div>
+      <div class="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
     </div>
+  
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+  
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-extrabold tracking-wide">
+          <span class="bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent">
+            Technical Scope of Work
+          </span>
+        </h3>
+        <p class="mt-4 text-slate-200 max-w-3xl mx-auto text-sm md:text-base">
+          Futuristic energy automation solutions with intelligent diagnostics, IEC 61850 systems,
+          SA cyber-fabric integration &  monitoring.
+        </p>
+      </div>
+  
+      <!-- Cyber Chips -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div class="p-5 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white/20 transition">
+          <p class="text-white font-semibold text-sm tracking-wide">Design & Digital Architecture</p>
+          <p class="text-slate-200 text-xs mt-1">System topologies, SCADA/UI logic, IEC standards</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white/20 transition">
+          <p class="text-white font-semibold text-sm tracking-wide">Hardware + IED Ecosystem</p>
+          <p class="text-slate-200 text-xs mt-1">Relays, Fiber, Panels, Switchgear, Redundancy</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white/20 transition">
+          <p class="text-white font-semibold text-sm tracking-wide">Field Deployment + O&M</p>
+          <p class="text-slate-200 text-xs mt-1">FAT/SAT, OT security, commissioning, lifecycle analytics</p>
+        </div>
+      </div>
+  
+      <!-- SECTION A -->
+      <div>
+        <h4 class="text-2xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
+          A. Energy Automation Products
+        </h4>
+  
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <!-- Card: PM / SCADA -->
+          <div class="group rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-8 relative overflow-hidden hover:border-green-400 transition">
+            <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-green-400 via-transparent to-yellow-400 blur-xl"></div>
+            <div class="relative">
+              <p class="text-xl font-bold text-white">Power Monitoring (EPMS/SCADA)</p>
+              <p class="mt-2 text-slate-200 text-sm">Real-time electrical visibility with autonomous power event analytics.</p>
+              <ul class="mt-4 text-sm text-slate-200 space-y-1">
+                <li>IEC 61850 SAS / GOOSE / MMS / PRP-HSR</li>
+                <li>SOE, relay comms, breaker logic</li>
+                <li>Waveform capture + Harmonics AI</li>
+                <li>Central dashboards + historian</li>
+                <li>ISO/NERC alarms w/ notifications</li>
+              </ul>
+              <p class="text-xs mt-4 text-slate-400 italic">Schneider • COPA-DATA • Surveilant Tech</p>
+            </div>
+          </div>
+  
+          <!-- PQ / Protection -->
+          <div class="group rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-8 relative overflow-hidden hover:border-green-400 transition">
+            <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-green-400 via-transparent to-yellow-400 blur-xl"></div>
+            <div class="relative">
+              <p class="text-xl font-bold text-white">Power Quality Correction & Protection</p>
+              <p class="mt-2 text-slate-200 text-sm">Edge-based harmonic mitigation & loss reduction for industrial grids.</p>
+              <ul class="mt-4 text-sm text-slate-200 space-y-1">
+                <li>Active Harmonic Filters (AHF)</li>
+                <li>SVG/SVC Ultra-fast VAR agents</li>
+                <li>APFC intelligent banks</li>
+                <li>Tuned/Detuned filters for VFD/UPS</li>
+                <li>UPS • Stabilizers • Isolation</li>
+                <li>IEC-61643 lightning protection</li>
+              </ul>
+              <p class="text-xs mt-4 text-slate-400 italic">Schneider • APC • Gutor • COMAR</p>
+            </div>
+          </div>
+  
+          <!-- Industrial Automation -->
+          <div class="group rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-8 relative overflow-hidden hover:border-green-400 transition">
+            <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-green-400 via-transparent to-yellow-400 blur-xl"></div>
+            <div class="relative">
+              <p class="text-xl font-bold text-white">Industrial Controls & Comms</p>
+              <p class="mt-2 text-slate-200 text-sm">Cyber-secure automation fabrics for Oil/Gas, Utilities & Manufacturing.</p>
+              <ul class="mt-4 text-sm text-slate-200 space-y-1">
+                <li>Redundant PLC cores</li>
+                <li>RTUs & edge gateways</li>
+                <li>Managed fiber networks</li>
+                <li>IIoT Cloud + MQTT/OPC UA</li>
+                <li>LoRaWAN Mesh / 5GHz Wireless</li>
+              </ul>
+              <p class="text-xs mt-4 text-slate-400 italic">Beckhoff • Moxa • Advantech • Brodersen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- PANELS SECTION -->
+      <div class="mt-20 pt-12 border-t border-white/20">
+        <h4 class="text-2xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
+          Specialized Panel & Integrated Supply
+        </h4>
+  
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="rounded-2xl bg-white/10 p-6 border border-white/20 backdrop-blur-md">
+            <p class="font-semibold text-lg text-white">Custom Panels</p>
+            <ul class="mt-3 text-sm text-slate-200 space-y-1">
+              <li>MCC / PCC / ATS</li>
+              <li>Synchronizing Cabinets</li>
+              <li>Marshalling & Relay Panels</li>
+              <li>SCADA Operation Consoles</li>
+            </ul>
+          </div>
+  
+          <div class="rounded-2xl bg-white/10 p-6 border border-white/20 backdrop-blur-md">
+            <p class="font-semibold text-lg text-white">Transformers & EM Systems</p>
+            <ul class="mt-3 text-sm text-slate-200 space-y-1">
+              <li>Dry / Oil Transformers</li>
+              <li>Switchgear & Motors</li>
+              <li>CT/PT Metering Infrastructure</li>
+            </ul>
+          </div>
+  
+          <div class="rounded-2xl bg-white/10 p-6 border border-white/20 backdrop-blur-md">
+            <p class="font-semibold text-lg text-white">Industrial Materials</p>
+            <ul class="mt-3 text-sm text-slate-200 space-y-1">
+              <li>Cable trays • Glands</li>
+              <li>Earthing & Surge Mesh</li>
+              <li>EPDM / PVC Specialized Sheets</li>
+              <li>Insulation Coatings Tech</li>
+            </ul>
+          </div>
+        </div>
+      
+  
+  
+  
+    
+   
+  
 
     <div class="max-w-7xl mx-auto px-6 lg:px-12 mt-20">
         <h2 class="text-center text-[var(--maes-gold)] font-extrabold text-4xl tracking-wide drop-shadow-lg mb-12">
@@ -350,17 +386,17 @@
             <div class="premium-card bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-[var(--maes-light-green)] shadow-lg hover:shadow-2xl transition-all duration-500 p-4">
                 <div class="swiper swiper-one rounded-xl overflow-hidden border-2 border-[var(--maes-gold)] shadow-md">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="20.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="21.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="25.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="26.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="27.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="28.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="29.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="30.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="32.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="33.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="34.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/20.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/21.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/25.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/26.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/27.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/28.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/29.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/30.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/32.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/33.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/34.jpg" class="w-full h-60 object-contain"></div>
                       
                     </div>
                     <div class="swiper-pagination swiper-pagination-one"></div>
@@ -373,11 +409,11 @@
             <div class="premium-card bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-[var(--maes-light-green)] shadow-lg hover:shadow-2xl transition-all duration-500 p-4">
                 <div class="swiper swiper-two rounded-xl overflow-hidden border-2 border-[var(--maes-gold)] shadow-md">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="c.webp" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="b.webp" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="a.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="d.jpeg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="e.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/c.webp" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/b.webp" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/a.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/d.jpeg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/e.jpg" class="w-full h-60 object-contain"></div>
                     </div>
                     <div class="swiper-pagination swiper-pagination-two"></div>
                 </div>
@@ -389,14 +425,16 @@
             <div class="premium-card bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-[var(--maes-light-green)] shadow-lg hover:shadow-2xl transition-all duration-500 p-4">
                 <div class="swiper swiper-three rounded-xl overflow-hidden border-2 border-[var(--maes-gold)] shadow-md">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="banniere_6103.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="Brodersen-Logo-Embedded-768x389.jpg" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="images (1).png" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="images (2).png" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="images (3).png" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="images.png" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="moxa-logo-open-graph.png" class="w-full h-60 object-contain"></div>
-                        <div class="swiper-slide"><img src="logo.png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/banniere_6103.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/Brodersen-Logo-Embedded-768x389.jpg" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/images (1).png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/images (2).png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/images (3).png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/images.png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/moxa-logo-open-graph.png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/logo.png" class="w-full h-60 object-contain"></div>
+                        <div class="swiper-slide"><img src="/beck.png" class="w-full h-60 object-contain"></div>
+                        
                         
                     </div>
                     <div class="swiper-pagination swiper-pagination-three"></div>
@@ -416,7 +454,7 @@
             loop: true,
             slidesPerView: 1,
             spaceBetween: 10,
-          speed: 400,
+            speed: 400,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -432,7 +470,7 @@
             loop: true,
             slidesPerView: 1,
             spaceBetween: 10,
-          speed: 400,
+            speed: 400,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -448,7 +486,7 @@
             loop: true,
             slidesPerView: 1,
             spaceBetween: 10,
-          speed: 400,
+            speed: 400,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -462,62 +500,136 @@
     </script>
 </section>
 
-  <section id="services" class="py-16 lg:py-20 bg-slate-900 text-slate-100">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <div class="text-center">
-        <h3 class="text-2xl font-bold">Services</h3>
-        <p class="mt-2 text-slate-300 max-w-2xl mx-auto">Comprehensive services from consultancy to full turnkey delivery.</p>
-      </div>
+<section id="services" class="py-20 bg-slate-900 text-slate-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
-      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 rounded-lg glass">
-          <h4 class="font-semibold text-white">Power Quality & Audit</h4>
-          <p class="mt-2 text-slate-300 text-sm">Comprehensive services including Energy and Harmonics Audits, Analysis, and implementation of solutions for power quality improvement.</p>
-          <ul class="mt-3 ml-4 list-disc text-slate-300 text-sm space-y-1">
-            <li>Energy & Power Quality Audits, Studies, and Analysis.</li>
-            <li>Power Factor Correction (PFC) Systems.</li>
-            <li>Harmonics Mitigation (Active & Passive Filters).</li>
-            <li>Uninterruptible Power Supply (UPS) & Stabilizers.</li>
-            <li>VFD (Variable Frequency Drives) & Soft Starters.</li>
-          </ul>
-        </div>
-
-        <div class="p-6 rounded-lg glass">
-          <h4 class="font-semibold text-white">Energy Management & Automation</h4>
-          <p class="mt-2 text-slate-300 text-sm">Design, supply, and integration of SCADA and Power Monitoring Systems for control, billing, and automation solutions.</p>
-          <ul class="mt-3 ml-4 list-disc text-slate-300 text-sm space-y-1">
-            <li>Electrical Power Monitoring Systems (EPMS/PMS).</li>
-            <li>SCADA (Supervisory Control and Data Acquisition).</li>
-            <li>Power Systems Automation (PSA/Reduced PSA) for Aramco projects.</li>
-            <li>Remote Switching & Monitoring Systems (RSMS) for Aramco projects.</li>
-          </ul>
-        </div>
-
-        <div class="p-6 rounded-lg glass">
-          <h4 class="font-semibold text-white">CCTV, Security & Comms</h4>
-          <p class="mt-2 text-slate-300 text-sm">Full turnkey services for Security Systems, Communication infrastructure, and Smart Home Automation technologies.</p>
-          <ul class="mt-3 ml-4 list-disc text-slate-300 text-sm space-y-1">
-            <li>CCTV (Surveillance cameras and remote monitoring).</li>
-            <li>Security Systems (e.g., Paradox security alarm system).</li>
-            <li>IP Telephone and Intercom Systems.</li>
-            <li>Communication & Internet (wired & wireless IT systems and Networking).</li>
-            <li>Smart Home Automation.</li>
-          </ul>
-        </div>
-
-        <div class="p-6 rounded-lg glass">
-          <h4 class="font-semibold text-white">Electrical Supply & Cabling</h4>
-          <p class="mt-2 text-slate-300 text-sm">Supply of specialized electrical panels and certified services for Fiber Optic and Copper cable splicing, termination, and testing.</p>
-          <ul class="mt-3 ml-4 list-disc text-slate-300 text-sm space-y-1">
-            <li>Supply of Electrical Panels (Distribution, Synchronizing, ATS).</li>
-            <li>Transformers & Electrical Panels supply.</li>
-            <li>Fiber Optic Cable Splicing, Termination, and Testing (OTDR/Power Meter).</li>
-            <li>Design, Engineering, and Installation services for all systems.</li>
-          </ul>
-        </div>
-      </div>
+    <!-- HEADER -->
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <h3 class="text-4xl font-bold tracking-wider text-white">
+        Our Core Services
+      </h3>
+      <p class="mt-3 text-lg text-slate-300">
+        High-performance engineering services tailored for industrial, commercial and utility sectors.
+      </p>
     </div>
-  </section>
+
+    <div class="space-y-10">
+
+      <!-- SERVICE ITEM -->
+      <div class="group p-8 rounded-xl border border-slate-800 bg-slate-800/40 hover:bg-slate-800 hover:border-[var(--maes-green)] transition duration-300">
+        <div class="flex flex-col md:flex-row gap-6">
+          
+          <!-- ICON -->
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-[var(--maes-green)]/15 border border-[var(--maes-green)] text-[var(--maes-green)] text-2xl font-bold">
+            PQ
+          </div>
+
+          <!-- CONTENT -->
+          <div class="space-y-3">
+            <h4 class="text-2xl font-semibold text-white">
+              Power Quality & Energy Audit
+            </h4>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Improve reliability, minimize losses, and optimize system performance through root-cause 
+              analysis and standards-driven power quality management.
+            </p>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 text-xs font-medium">
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">Energy Audit</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">APFC / APF</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">Harmonics</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">UPS & Stabilizers</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">VFD / Soft Starters</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICE ITEM -->
+      <div class="group p-8 rounded-xl border border-slate-800 bg-slate-800/40 hover:bg-slate-800 hover:border-[var(--maes-green)] transition duration-300">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-[var(--maes-gold)]/15 border border-[var(--maes-gold)] text-[var(--maes-gold)] text-2xl font-bold">
+            EMS
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="text-2xl font-semibold text-white">
+              Energy Management & Automation
+            </h4>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Fully engineered SCADA and EPMS platforms with IEC-61850 integration for 
+              intelligent control, high-accuracy metering and enterprise automation.
+            </p>
+
+            <div class="flex flex-wrap gap-2 text-xs font-medium">
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">EPMS / PMS</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">SCADA</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">PSA / R-PSA (Aramco)</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">RSMS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICE ITEM -->
+      <div class="group p-8 rounded-xl border border-slate-800 bg-slate-800/40 hover:bg-slate-800 hover:border-[var(--maes-green)] transition duration-300">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-blue-500/10 border border-blue-500 text-blue-400 text-2xl font-bold">
+            SEC
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="text-2xl font-semibold text-white">
+              CCTV, Security & Communication Systems
+            </h4>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Enterprise-grade surveillance and smart automation systems with secure
+              communication infrastructure for critical sites and facilities.
+            </p>
+
+            <div class="flex flex-wrap gap-2 text-xs font-medium">
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">CCTV</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">Intrusion Systems</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">IP Telephony</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">Networking / Wi-Fi</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">Smart Home</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICE ITEM -->
+      <div class="group p-8 rounded-xl border border-slate-800 bg-slate-800/40 hover:bg-slate-800 hover:border-[var(--maes-green)] transition duration-300">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="w-16 h-16 rounded-xl flex items-center justify-center bg-emerald-500/10 border border-emerald-500 text-emerald-400 text-2xl font-bold">
+            ELV
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="text-2xl font-semibold text-white">
+              Electrical Supply & Fiber Cabling
+            </h4>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Certified panel manufacturing, fiber splicing and termination services delivered to 
+              industrial and mission-critical standards.
+            </p>
+
+            <div class="flex flex-wrap gap-2 text-xs font-medium">
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">LV Panels (ATS / Sync)</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">Transformers</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">Fiber Splicing</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">OTDR Testing</span>
+              <span class="px-3 py-1 rounded-md bg-slate-700 text-slate-300">Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> 
+
 
   <div class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
     <div class="feature-box grid grid-cols-1 lg:grid-cols-2 gap-8 lg:text-center">
