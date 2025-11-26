@@ -232,142 +232,157 @@
   
   
   
-  <section id="technical-scope" class="py-24 relative overflow-hidden bg-gradient-to-br from-slate-800 via-slate-900 to-slate-700 text-slate-100">
+ <section id="technical-scope"
+  class="relative py-28 text-slate-100 bg-slate-900/90 overflow-hidden">
 
-    <!-- Background Neon Grid -->
-    <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,rgba(255,255,255,0.03)_100%)]"></div>
-      <div class="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
+  <!-- 🔥 Fullscreen industrial background -->
+  <div class="absolute inset-0">
+    <img src="bg3.webp" class="w-full h-full object-cover opacity-80">
+
+  </div>
+
+  <!-- Neon gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/60 to-slate-900/90"></div>
+
+  <!-- Grid overlay for futuristic style -->
+  <div class="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.06] pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h3 class="text-4xl font-extrabold tracking-wide">
+        <span class="bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent">
+          Technical Scope of Work
+        </span>
+      </h3>
+      <p class="mt-4 max-w-3xl mx-auto text-sm md:text-base text-slate-300">
+        Futuristic energy automation solutions with intelligent diagnostics, IEC 61850 systems,
+        SA cyber-fabric integration & monitoring.
+      </p>
     </div>
-  
-    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-  
-      <!-- Header -->
-      <div class="text-center mb-16">
-        <h3 class="text-4xl font-extrabold tracking-wide">
-          <span class="bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent">
-            Technical Scope of Work
-          </span>
-        </h3>
-        <p class="mt-4 text-slate-200 max-w-3xl mx-auto text-sm md:text-base">
-          Futuristic energy automation solutions with intelligent diagnostics, IEC 61850 systems,
-          SA cyber-fabric integration &  monitoring.
-        </p>
+
+    <!-- 3 Icon Chips -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      <div class="p-5 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 hover:bg-white/20 transition">
+        <p class="text-white font-semibold text-sm">Design & Digital Architecture</p>
+        <p class="text-slate-300 text-xs mt-1">System topologies, SCADA/UI logic, IEC standards</p>
       </div>
-  
-      <!-- Cyber Chips -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-        <div class="p-5 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white/20 transition">
-          <p class="text-white font-semibold text-sm tracking-wide">Design & Digital Architecture</p>
-          <p class="text-slate-200 text-xs mt-1">System topologies, SCADA/UI logic, IEC standards</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white/20 transition">
-          <p class="text-white font-semibold text-sm tracking-wide">Hardware + IED Ecosystem</p>
-          <p class="text-slate-200 text-xs mt-1">Relays, Fiber, Panels, Switchgear, Redundancy</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white/20 transition">
-          <p class="text-white font-semibold text-sm tracking-wide">Field Deployment + O&M</p>
-          <p class="text-slate-200 text-xs mt-1">FAT/SAT, OT security, commissioning, lifecycle analytics</p>
-        </div>
+      <div class="p-5 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 hover:bg-white/20 transition">
+        <p class="text-white font-semibold text-sm">Hardware + IED Ecosystem</p>
+        <p class="text-slate-300 text-xs mt-1">Relays, Fiber, Panels, Switchgear, Redundancy</p>
       </div>
-  
-      <!-- SECTION A -->
-      <div>
-        <h4 class="text-2xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
-          A. Energy Automation Products
-        </h4>
-  
-        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-          <!-- Card: PM / SCADA -->
-          <div class="group rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-8 relative overflow-hidden hover:border-green-400 transition">
-            <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-green-400 via-transparent to-yellow-400 blur-xl"></div>
-            <div class="relative">
-              <p class="text-xl font-bold text-white">Power Monitoring (EPMS/SCADA)</p>
-              <p class="mt-2 text-slate-200 text-sm">Real-time electrical visibility with autonomous power event analytics.</p>
-              <ul class="mt-4 text-sm text-slate-200 space-y-1">
-                <li>IEC 61850 SAS / GOOSE / MMS / PRP-HSR</li>
-                <li>SOE, relay comms, breaker logic</li>
-                <li>Waveform capture + Harmonics AI</li>
-                <li>Central dashboards + historian</li>
-                <li>ISO/NERC alarms w/ notifications</li>
-              </ul>
-              <p class="text-xs mt-4 text-slate-400 italic">Schneider • COPA-DATA • Surveilant Tech</p>
-            </div>
-          </div>
-  
-          <!-- PQ / Protection -->
-          <div class="group rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-8 relative overflow-hidden hover:border-green-400 transition">
-            <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-green-400 via-transparent to-yellow-400 blur-xl"></div>
-            <div class="relative">
-              <p class="text-xl font-bold text-white">Power Quality Correction & Protection</p>
-              <p class="mt-2 text-slate-200 text-sm">Edge-based harmonic mitigation & loss reduction for industrial grids.</p>
-              <ul class="mt-4 text-sm text-slate-200 space-y-1">
-                <li>Active Harmonic Filters (AHF)</li>
-                <li>SVG/SVC Ultra-fast VAR agents</li>
-                <li>APFC intelligent banks</li>
-                <li>Tuned/Detuned filters for VFD/UPS</li>
-                <li>UPS • Stabilizers • Isolation</li>
-                <li>IEC-61643 lightning protection</li>
-              </ul>
-              <p class="text-xs mt-4 text-slate-400 italic">Schneider • APC • Gutor • COMAR</p>
-            </div>
-          </div>
-  
-          <!-- Industrial Automation -->
-          <div class="group rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-8 relative overflow-hidden hover:border-green-400 transition">
-            <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-green-400 via-transparent to-yellow-400 blur-xl"></div>
-            <div class="relative">
-              <p class="text-xl font-bold text-white">Industrial Controls & Comms</p>
-              <p class="mt-2 text-slate-200 text-sm">Cyber-secure automation fabrics for Oil/Gas, Utilities & Manufacturing.</p>
-              <ul class="mt-4 text-sm text-slate-200 space-y-1">
-                <li>Redundant PLC cores</li>
-                <li>RTUs & edge gateways</li>
-                <li>Managed fiber networks</li>
-                <li>IIoT Cloud + MQTT/OPC UA</li>
-                <li>LoRaWAN Mesh / 5GHz Wireless</li>
-              </ul>
-              <p class="text-xs mt-4 text-slate-400 italic">Beckhoff • Moxa • Advantech • Brodersen</p>
-            </div>
-          </div>
+      <div class="p-5 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 hover:bg-white/20 transition">
+        <p class="text-white font-semibold text-sm">Field Deployment + O&M</p>
+        <p class="text-slate-300 text-xs mt-1">FAT/SAT, OT security, commissioning, lifecycle analytics</p>
+      </div>
+    </div>
+
+    <!-- Scope A -->
+    <h4 class="text-2xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
+      A. Energy Automation Products
+    </h4>
+
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+      
+      <!-- CARD -->
+      <div class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 relative overflow-hidden hover:border-green-400 transition">
+        <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-green-400 via-transparent to-yellow-400 blur-xl"></div>
+        <div class="relative">
+          <p class="text-xl font-bold">Power Monitoring (EPMS/SCADA)</p>
+          <p class="mt-2 text-slate-300 text-sm">
+            Real-time electrical visibility with autonomous power event analytics.
+          </p>
+          <ul class="mt-4 text-sm text-slate-300 space-y-1">
+            <li>IEC 61850 SAS / GOOSE / MMS / PRP-HSR</li>
+            <li>SOE, relay comms, breaker logic</li>
+            <li>Waveform capture + Harmonics AI</li>
+            <li>Central dashboards + historian</li>
+            <li>ISO/NERC alarms w/ notifications</li>
+          </ul>
+          <p class="text-xs mt-4 text-slate-400 italic">Schneider • COPA-DATA • Surveilant Tech</p>
         </div>
       </div>
-  
-      <!-- PANELS SECTION -->
-      <div class="mt-20 pt-12 border-t border-white/20">
-        <h4 class="text-2xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
-          Specialized Panel & Integrated Supply
-        </h4>
-  
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="rounded-2xl bg-white/10 p-6 border border-white/20 backdrop-blur-md">
-            <p class="font-semibold text-lg text-white">Custom Panels</p>
-            <ul class="mt-3 text-sm text-slate-200 space-y-1">
-              <li>MCC / PCC / ATS</li>
-              <li>Synchronizing Cabinets</li>
-              <li>Marshalling & Relay Panels</li>
-              <li>SCADA Operation Consoles</li>
-            </ul>
-          </div>
-  
-          <div class="rounded-2xl bg-white/10 p-6 border border-white/20 backdrop-blur-md">
-            <p class="font-semibold text-lg text-white">Transformers & EM Systems</p>
-            <ul class="mt-3 text-sm text-slate-200 space-y-1">
-              <li>Dry / Oil Transformers</li>
-              <li>Switchgear & Motors</li>
-              <li>CT/PT Metering Infrastructure</li>
-            </ul>
-          </div>
-  
-          <div class="rounded-2xl bg-white/10 p-6 border border-white/20 backdrop-blur-md">
-            <p class="font-semibold text-lg text-white">Industrial Materials</p>
-            <ul class="mt-3 text-sm text-slate-200 space-y-1">
-              <li>Cable trays • Glands</li>
-              <li>Earthing & Surge Mesh</li>
-              <li>EPDM / PVC Specialized Sheets</li>
-              <li>Insulation Coatings Tech</li>
-            </ul>
-          </div>
+
+      <!-- CARD -->
+      <div class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 relative overflow-hidden hover:border-green-400 transition">
+        <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-green-400 via-transparent to-yellow-400 blur-xl"></div>
+        <div class="relative">
+          <p class="text-xl font-bold">Power Quality Correction & Protection</p>
+          <p class="mt-2 text-slate-300 text-sm">
+            Edge-based harmonic mitigation & loss reduction for industrial grids.
+          </p>
+          <ul class="mt-4 text-sm text-slate-300 space-y-1">
+            <li>Active Harmonic Filters (AHF)</li>
+            <li>SVG/SVC Ultra-fast VAR agents</li>
+            <li>APFC intelligent banks</li>
+            <li>Tuned/Detuned filters for VFD/UPS</li>
+            <li>UPS • Stabilizers • Isolation</li>
+            <li>IEC-61643 lightning protection</li>
+          </ul>
+          <p class="text-xs mt-4 text-slate-400 italic">Schneider • APC • Gutor • COMAR</p>
         </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 relative overflow-hidden hover:border-green-400 transition">
+        <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-green-400 via-transparent to-yellow-400 blur-xl"></div>
+        <div class="relative">
+          <p class="text-xl font-bold">Industrial Controls & Comms</p>
+          <p class="mt-2 text-slate-300 text-sm">
+            Cyber-secure automation fabrics for Oil/Gas, Utilities & Manufacturing.
+          </p>
+          <ul class="mt-4 text-sm text-slate-300 space-y-1">
+            <li>Redundant PLC cores</li>
+            <li>RTUs & edge gateways</li>
+            <li>Managed fiber networks</li>
+            <li>IIoT Cloud + MQTT/OPC UA</li>
+            <li>LoRaWAN Mesh / 5GHz Wireless</li>
+          </ul>
+          <p class="text-xs mt-4 text-slate-400 italic">Beckhoff • Moxa • Advantech • Brodersen</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PANELS -->
+    <div class="mt-20 pt-12 border-t border-white/20">
+      <h4 class="text-2xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
+        Specialized Panel & Integrated Supply
+      </h4>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20">
+          <p class="font-semibold text-lg">Custom Panels</p>
+          <ul class="mt-3 text-sm text-slate-300 space-y-1">
+            <li>MCC / PCC / ATS</li>
+            <li>Synchronizing Cabinets</li>
+            <li>Marshalling & Relay Panels</li>
+            <li>SCADA Operation Consoles</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20">
+          <p class="font-semibold text-lg">Transformers & EM Systems</p>
+          <ul class="mt-3 text-sm text-slate-300 space-y-1">
+            <li>Dry / Oil Transformers</li>
+            <li>Switchgear & Motors</li>
+            <li>CT/PT Metering Infrastructure</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20">
+          <p class="font-semibold text-lg">Industrial Materials</p>
+          <ul class="mt-3 text-sm text-slate-300 space-y-1">
+            <li>Cable trays • Glands</li>
+            <li>Earthing & Surge Mesh</li>
+            <li>EPDM / PVC Specialized Sheets</li>
+            <li>Insulation Coatings Tech</li>
+          </ul>
+        </div>
+      </div>
+   
+
       
   
   
